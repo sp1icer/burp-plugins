@@ -1,5 +1,8 @@
 package burp;
 
+// Using this tutorial since it's extremely close to
+// the end goal: https://www.itsecguy.com/my-first-burp-suite-extension/
+
 public class BurpExtender implements IBurpExtender {
 
     private IBurpExtenderCallbacks callbacks;
