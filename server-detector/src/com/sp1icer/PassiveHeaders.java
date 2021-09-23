@@ -10,6 +10,14 @@ public class PassiveHeaders {
     private final IExtensionHelpers helpers;
     private final ServerScanner scanner;
 
+    // All the headers to check against.
+    private static final String[] headers = {
+            "Server",
+            "X-Powered-By",
+            "X-Version",
+            "X-AspNet-Version"
+    };
+
     public PassiveHeaders (ServerScanner scanner) {
         this.scanner = scanner;
         this.callbacks = this.scanner.getCallbacks();
